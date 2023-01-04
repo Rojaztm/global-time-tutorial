@@ -45,6 +45,7 @@ class _HomeState extends State<Home> {
                       data = {
                         'location': result['location'],
                         'time': result['time'],
+                        'date': result['date'],
                         'isDaytime': result['isDaytime']
                       };
                     });
@@ -80,6 +81,16 @@ class _HomeState extends State<Home> {
               Center(
                 child: Text(
                   data['time'],
+                  style: const TextStyle(
+                    fontSize: 65.0,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20.0),
+              Center(
+                child: Text(
+                  data['date'],
                   style: const TextStyle(
                     fontSize: 65.0,
                     color: Colors.black,

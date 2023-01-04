@@ -12,7 +12,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
 
   void setGlobalTime() async {
-    GlobalTime instance = GlobalTime(location: 'Berlin', flag: 'germany.png', url: 'Europe/Berlin');
+    GlobalTime instance = GlobalTime(location: 'Lagos', flag: 'nigeria.jpg', url: 'Africa/Lagos');
       /* The 'await' keyword tells the compiler to wait for the instance.getTime() function which connects
          to an external api to finish before the rest of the program execution will continue.
             The getTime() function return-type must be declared as Future<> in its source code i.e. the
@@ -22,6 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
       'location': instance.location,
       'flag': instance.flag,
       'time': instance.time,
+      'date': instance.date,
       'isDaytime': instance.isDaytime,
     });
   }

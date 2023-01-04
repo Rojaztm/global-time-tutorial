@@ -2,7 +2,7 @@
     package="com.example.time_zone">
    <application
         android:label="time_zone"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
